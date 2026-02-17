@@ -1,0 +1,33 @@
+[project]
+name = "nomansland-dev"
+version = "0.1.0"
+description = "APIS instance for the project Nomansland"
+authors = [
+    { name = "Saranya Balasubramanian", email = "saranya.balasubramanian@oeaw.ac.at" }
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "apis-core-rdf==0.58.2",
+    "apis-acdhch-default-settings==2.16.0",
+    "psycopg[binary]>=3.2",
+    "django-extensions>=3.2.3,<4.0.0",
+    "pandas>=2.2.2,<3.0.0",
+    "tqdm>=4.67.1,<5.0.0",
+    "apis-bibsonomy>=0.13.1,<1.0.0",
+    "django-interval>=0.5.1,<1.0.0",
+    "tabulate>=0.9.0,<1.0.0",
+    "coverage>=7.8.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupyterlab>=4.3.3,<5.0.0"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["apis_ontology"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
