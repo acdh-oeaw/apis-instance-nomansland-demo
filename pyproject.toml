@@ -11,7 +11,7 @@ dependencies = [
     "apis-core-rdf==0.58.2",
     "apis-acdhch-default-settings==2.16.0",
     "psycopg[binary]>=3.2",
-    "django-extensions>=3.2.3,<4.0.0",
+    "django-extensions>=3.2.3,<5.0.0",
     "pandas>=2.2.2,<3.0.0",
     "tqdm>=4.67.1,<5.0.0",
     "apis-bibsonomy>=0.13.1,<1.0.0",
